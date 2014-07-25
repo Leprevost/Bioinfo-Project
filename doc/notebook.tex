@@ -1,0 +1,24 @@
+% Classe do documento
+\documentclass[twoside,a4paper,11pt]{report}
+
+% Pacotes e comandos customizados
+\include{meta}
+
+% Início do texto
+\begin{document}
+
+\include{pre}   % Capa, prefácio e afins
+\include{cap1}	% Capítulo 1: Introdução
+\include{final}	% Capítulo 3: Considerações Finais
+
+% Formato da bibliografia
+\bibliographystyle{apalike}
+
+% Arquivo .bib
+\bibliography{ref}
+
+% Apêndice(s)
+\include{apendice}
+
+% Fim do texto
+\end{document}
